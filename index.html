@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 4 Project</title>
 </head>
+<header>
+    <nav>
+        <ul>
+            <li>Fred the Baker Baking Company</li>
+            <li>About Donut Maker</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
 <body>
     <div class="container">
-        <div class="anchor"></div>
+        <div class="anchor">
+            <section class="main">
+                <section class="click-handler">
+                    <button class="click-handler__bake-button">MAKE DONUTS</button>
+                    <p class="click-handler__display-donuts">0</p>
+                </section>
+
+                <section class="auto-clicker">
+                    <button class="auto-clicker__purchase-button">PURCHASE CLICKS</button>
+                    <p class="auto-clicker__display-auto-clicks"></p>
+                </section>
+
+                <section class="click-multiplier">
+                <!-- display amount of donut multipliers purchased -->
+                </section>
+            </section>
+        </div>
     </div>
-    <script src="/src/app.js"></script>
+    <script src="./src/js/donut.js"></script>
+    <script src="./src/js/donutMaker.js"></script>
 </body>
 </html>
