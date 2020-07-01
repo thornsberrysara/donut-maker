@@ -24,6 +24,10 @@ const updateAutoClicks = () => {
     displayAutoClicks.innerText = autoClicks.autoClicksPurchased;
 }
 
+const subtractDonutsOneAutoClickPurchased = () => {
+    donut.amountOfDonuts -= 100;
+}
+
 const bakeButton = document.querySelector(".click-handler__bake-button");
 
 bakeButton.addEventListener("click", () => {
@@ -37,5 +41,6 @@ const purchaseButton = document.querySelector(".auto-clicker__purchase-button");
 purchaseButton.addEventListener("click", () => {
     event.preventDefault();
     purchaseClicks();
+    subtractDonutsOneAutoClickPurchased();
     updateAutoClicks();
 });
