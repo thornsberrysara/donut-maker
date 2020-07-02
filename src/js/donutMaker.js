@@ -1,39 +1,41 @@
 class DonutMaker {
 
     constructor() {
-        this.autoClickerCost = 100;
-        this.autoClickerCount = 0;
         this.donutCount = 0;
-    }
-    
-    getDonutCount() {
-        return this.donutCount;
+        this.donutDisplay = donutDisplay;
+        // this.autoClickerCount = 0;
+        // this.displayAutoClicks = displayAutoClicks;
+        // this.autoClickerCost = 100;
     }
     
     increaseDonutsAfterClick() {
         this.donutCount++;
     }
-
-    getAutoClickerCount() {
-        return this.autoClickerCount;
+    
+    updateDonutDisplay() {
+        this.donutDisplay.innerText = this.donutCount;
     }
+    
+    // increaseAutoClickerCount() {
+    //     this.autoClickerCount++;
+    // }
+    
+    // updateDisplayAutoClicks() {
+    //     this.displayAutoClicks.innerText = this.autoClickerCount;
+    // }
+    
+    // subtractDonutsAfterClickerPurchase() {
+    //     this.donutCount -= this.autoClickerCost;
+    // }
 
-    increaseAutoClickerCount() {
-        this.autoClickerCount++;
-    }
+    // increaseCostOfAutoClicker() {
+    //     this.autoClickerCost += this.autoClickerCost * .1;
+    // }
 
-    subtractDonutsAfterClickerPurchase() {
-        this.donutCount -= this.autoClickerCost
-    }
-
-    increaseCostOfAutoClicker() {
-        this.autoClickerCost += this.autoClickerCost * .1;
-    }
-
-    purchaseAutoClicker() {
-        this.autoClickerCost();
-        this.subtractDonutsAfterClickerPurchase();
-        this.increaseAutoClickerCount();
-    }
+    // purchaseAutoClicker() {
+    //     this.autoClickerCost();
+    //     this.subtractDonutsAfterClickerPurchase();
+    //     this.increaseAutoClickerCount();
+    // }
 
 }
