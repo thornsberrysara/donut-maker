@@ -1,39 +1,39 @@
 class DonutMaker {
 
     constructor() {
-        this._autoClickerCost = 100;
-        this._autoClickerCount = 0;
-        this._donutCount = 0;
+        this.autoClickerCost = 100;
+        this.autoClickerCount = 0;
+        this.donutCount = 0;
     }
     
     getDonutCount() {
-        return this._donutCount;
+        return this.donutCount;
     }
     
     increaseDonutsAfterClick() {
-        this._donutCount++;
+        this.donutCount++;
     }
 
     getAutoClickerCount() {
-        return this._autoClickerCount;
+        return this.autoClickerCount;
     }
 
     increaseAutoClickerCount() {
-        this._autoClickerCount++;
+        this.autoClickerCount++;
     }
 
     subtractDonutsAfterClickerPurchase() {
-        this._donutCount -= this._autoClickerCost
+        this.donutCount -= this.autoClickerCost
     }
 
     increaseCostOfAutoClicker() {
-        this._autoClickerCost += this._autoClickerCost * .1;
+        this.autoClickerCost += this.autoClickerCost * .1;
     }
 
     purchaseAutoClicker() {
-        this._autoClickerCost();
+        this.autoClickerCost();
         this.subtractDonutsAfterClickerPurchase();
-        this._autoClickerCount();
+        this.increaseAutoClickerCount();
     }
 
 }
