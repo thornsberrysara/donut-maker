@@ -8,12 +8,13 @@ bakeButton.addEventListener("click", () => {
     donutMaker.updateDonutDisplay();
 })
 
-// const displayAutoClicks = document.querySelector(".auto-clicker__display-auto-clicks");
-// const purchaseButton = document.querySelector(".auto-clicker__purchase-button");
+const autoClicksDisplay = document.querySelector(".auto-clicker__auto-clicks-display");
+const autoClicker = new AutoClicker();
+const purchaseButton = document.querySelector(".auto-clicker__purchase-button");
 
-// purchaseButton.addEventListener("click", () => {
-//     event.preventDefault();
-//     donutMaker.subtractDonutsAfterClickerPurchase();
-//     donutMaker.increaseAutoClickerCount();
-//     donutMaker.updateDisplayAutoClicks();
-// });
+purchaseButton.addEventListener("click", () => {
+    event.preventDefault();
+    autoClicker.increaseAutoClickerCount();
+    autoClicker.subtractDonutsAfterClickerPurchase();
+    autoClicker.updateAutoClicksDisplay();
+});
