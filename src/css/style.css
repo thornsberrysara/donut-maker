@@ -1,8 +1,35 @@
-* {
+.background {
     background-color: #ffe6eb;
+    background-image: url("https://www7.lunapic.com/do-not-link-here-use-hosting-instead/159378802685924604?8466302");
+    background-size: 100%;
+    
 }
 
-button {
+.container {
+    background-color: #c8e0ea;
+    text-align: center;
+}
+
+.click-handler__bake-button {
+    background-color: #c8e0ea;
+    background-image: url("./images/donut-square.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    border: 0;
+}
+
+.auto-clicker__purchase-button {
     background-color: #defcfc;
+    border-radius: 20px;
+}
+
+.click-multiplier__purchase-button {
+    background-color: #defcfc;
+    border-radius: 20px;
+}
+
+.reset-button {
+    background-color: yellow;
     border-radius: 20px;
 }

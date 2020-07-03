@@ -53,7 +53,6 @@ class DonutMaker {
             this.increaseAutoClickerCount();
             this.increaseCostOfAutoClicker();
         } return;
-        // alert("You need some more donuts, doughboy!")
     }
 
     subtractDonutsAfterMultiplierPurchase() {
@@ -86,7 +85,6 @@ class DonutMaker {
             this.increaseMultiplierCount();
             this.increaseCostOfMultiplier();
         } return;
-        // alert("You need some more donuts, doughboy!")
     }
 
     reset() {
