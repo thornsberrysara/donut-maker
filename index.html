@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/layout.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/layout.css" />
     <title>Donut Maker</title>
-</head>
-<section class="background">
-<header>
-    <nav>
+  </head>
+  <section class="background">
+    <header>
+      <nav>
         <ul>
-            <li>Fred the Baker Baking Company</li>
-            <li>About Donut Maker</li>
-            <li>Contact</li>
+          <li>
+            <a href="fred-the-baker.html">Fred the Baker Baking Company</a>
+          </li>
+          <li>
+            <a href="about-donut-maker.html">About Donut Maker</a></li>
+          <li>
+            <a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-</header>
-<body>
-    <div class="container">
+      </nav>
+    </header>
+    <body>
+      <div class="container">
         <div class="anchor">
-            <section class="main">
-                <section class="click-handler">
-                    <button class="click-handler__bake-button"></button>
-                    <p class="click-handler__donut-display">0</p>
-                </section>
-
-                <section class="auto-clicker">
-                    <button class="auto-clicker__purchase-button">PURCHASE CLICKS COST: 100</button>
-                    <p class="auto-clicker__auto-clicks-display">0</p>
-                </section>
-
-                <section class="click-multiplier">
-                    <button class="click-multiplier__purchase-button">PURCHASE MULTIPLIER COST: 10</button>
-                    <p class="click-multiplier__multiplier-display">1x</p>
-                </section>
-
-                <section class="reset">
-                    <button class="reset-button">RESET</button>
-                </section>
+          <section class="main">
+            <section class="click-handler">
+              <button class="click-handler__bake-button"></button>
+              <p
+                class="click-handler__donut-display"
+                style="padding-top: 20px;"
+              >
+                0
+              </p>
             </section>
-        </div>
-    </div>
 
-    <script src="./src/js/donutMaker.js"></script>
-    <script src="./src/js/app.js"></script>
-</body>
-</section>
+            <section class="auto-clicker">
+              <button class="auto-clicker__purchase-button">
+                PURCHASE AUTO CLICKER FOR: 100
+              </button>
+              <p class="auto-clicker__auto-clicks-display">0</p>
+            </section>
+
+            <section class="click-multiplier">
+              <button class="click-multiplier__purchase-button">
+                PURCHASE MULTIPLIER COST: 10
+              </button>
+              <p class="click-multiplier__multiplier-display">1x</p>
+            </section>
+
+            <section class="reset">
+              <button class="reset-button">RESET</button>
+            </section>
+          </section>
+        </div>
+      </div>
+
+      <script src="./src/js/donutMaker.js"></script>
+      <script src="./src/js/app.js"></script>
+    </body>
+  </section>
 </html>

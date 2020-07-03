@@ -20,7 +20,7 @@ class DonutMaker {
     }
     
     updateDonutDisplay() {
-        this.donutDisplay.innerText = this.donutCount;
+        this.donutDisplay.innerText = "DONUTS: " + this.donutCount;
     }
 
     subtractDonutsAfterClickerPurchase() {
@@ -44,7 +44,7 @@ class DonutMaker {
     }
 
     updateCostOfAutoClicker() {
-        this.autoClickPurchaseButton.innerText = "PURCHASE CLICKS COST: " + this.autoClickerCost;
+        this.autoClickPurchaseButton.innerText = "PURCHASE AUTO CLICKER FOR: " + this.autoClickerCost;
     }
 
     purchaseAutoClicker() {

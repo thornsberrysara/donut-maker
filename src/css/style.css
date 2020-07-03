@@ -1,35 +1,82 @@
-.background {
-    background-color: #ffe6eb;
-    background-image: url("https://www7.lunapic.com/do-not-link-here-use-hosting-instead/159378802685924604?8466302");
-    background-size: 100%;
-    
-}
+html { 
+    background: url("https://www7.lunapic.com/do-not-link-here-use-hosting-instead/159378802685924604?8466302") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 .container {
     background-color: #c8e0ea;
     text-align: center;
+    opacity: .85;
 }
+
+.click-handler__donut-display {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: rgb(112, 57, 130);
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(360deg);
+    }
+  }
 
 .click-handler__bake-button {
     background-color: #c8e0ea;
-    background-image: url("./images/donut-square.png");
+    background-image: url("./images/donut-crop.png");
     background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     border: 0;
+    animation: rotate 1s infinite linear;
 }
 
-.auto-clicker__purchase-button {
-    background-color: #defcfc;
+.auto-clicker__purchase-button, .click-multiplier__purchase-button {
+    background-color: rgba(228, 152, 194, 0.795);
     border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
-.click-multiplier__purchase-button {
-    background-color: #defcfc;
-    border-radius: 20px;
+.auto-clicker__purchase-button:active, .click-multiplier__purchase-button:active {
+    background: rgba(179, 119, 152, 0.795);
+    -webkit-box-shadow: inset 0px 0px 5px rgba(179, 119, 152, 0.795);
+    -moz-box-shadow: inset 0px 0px 5px rgba(179, 119, 152, 0.795);
+    box-shadow: inset 0px 0px 5px rgba(179, 119, 152, 0.795);
+    outline: none;
 }
 
 .reset-button {
-    background-color: yellow;
+    background-color: rgba(240, 240, 148, 0.927);
     border-radius: 20px;
+}
+
+.auto-clicker__auto-clicks-display, .click-multiplier__multiplier-display {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: lightslategrey;
+    padding: 5px;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: lightslategrey;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
