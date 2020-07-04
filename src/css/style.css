@@ -1,5 +1,5 @@
 html { 
-    background: url("https://www7.lunapic.com/do-not-link-here-use-hosting-instead/159378802685924604?8466302") no-repeat center center fixed; 
+    background: url("./images/sprinkles.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,6 +46,7 @@ html {
 .auto-clicker__purchase-button, .click-multiplier__purchase-button {
     background-color: rgba(228, 152, 194, 0.795);
     border-radius: 20px;
+    height: 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     cursor: pointer;
