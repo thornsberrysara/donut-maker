@@ -46,11 +46,14 @@ html {
 .auto-clicker__purchase-button, .click-multiplier__purchase-button {
     background-color: rgba(228, 152, 194, 0.795);
     border-radius: 20px;
-    height: 20px;
+    min-height: 40px;
+    border: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     cursor: pointer;
     outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .auto-clicker__purchase-button:active, .click-multiplier__purchase-button:active {
@@ -58,6 +61,7 @@ html {
     -webkit-box-shadow: inset 0px 0px 5px rgba(179, 119, 152, 0.795);
     -moz-box-shadow: inset 0px 0px 5px rgba(179, 119, 152, 0.795);
     box-shadow: inset 0px 0px 5px rgba(179, 119, 152, 0.795);
+    font-size: 12px;
     outline: none;
     cursor: pointer;
 }
@@ -65,8 +69,19 @@ html {
 .reset-button {
     background-color: rgba(240, 240, 148, 0.927);
     border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
     cursor: pointer;
     outline: none;
+    min-height: 30px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reset-button:active {
+    background-color: rgba(190, 190, 117, 0.927);
+    font-size: 10px;
 }
 
 .auto-clicker__auto-clicks-display, .click-multiplier__multiplier-display {
