@@ -5,6 +5,7 @@ const autoClickPurchaseButton = document.querySelector(".auto-clicker__purchase-
 const multiplierDisplay = document.querySelector(".click-multiplier__multiplier-display");
 const multiplierPurchaseButton = document.querySelector(".click-multiplier__purchase-button");
 const resetButton = document.querySelector(".reset-button");
+var audioRegister = document.getElementById("register-audio");
 const donutMaker = new DonutMaker();
 
 bakeButton.addEventListener("click", () => {
@@ -33,5 +34,13 @@ function autoClickerClicks() {
         donutMaker.increaseDonutsAfterClick();
     }
 }
-
 setInterval(autoClickerClicks, 1000);
+
+var audioClick = document.getElementById("click-audio"); 
+
+function playSFX() {
+    audioClick.play();
+    audioClick.currentTime = 0;
+} 
+
+
