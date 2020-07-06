@@ -43,4 +43,11 @@ function playSFX() {
     audioClick.currentTime = 0;
 } 
 
+var audioPurchase = document.getElementById("register-audio"); 
+
+function playRegister() {
+    audioPurchase.play();
+    audioPurchase.currentTime = 0;
+} 
+
 

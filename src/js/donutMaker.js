@@ -63,7 +63,8 @@ class DonutMaker {
   }
 
   increaseMultiplierCount() {
-    this.multiplierCount += 0.2;
+    const newMultiplierCount = this.multiplierCount += 0.2;
+    this.multiplierCount = Math.round(newMultiplierCount * 100) / 100;
     this.updateMultiplierCount();
   }
 
@@ -103,10 +104,5 @@ class DonutMaker {
     this.updateMultiplierCount();
     this.updateCostOfAutoClicker();
     this.updateCostOfMultiplier();
-  }
-
-  playRegister() {
-    audioRegister.play();
-    audioRegister.currentTime = 0;
   }
 }
