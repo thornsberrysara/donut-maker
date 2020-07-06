@@ -80,7 +80,7 @@ class DonutMaker {
 
   updateCostOfMultiplier() {
     this.multiplierPurchaseButton.innerText =
-      "PURCHASE MULTIPLIER COST: " + this.multiplierCost;
+      "PURCHASE MULTIPLIER FOR: " + this.multiplierCost;
   }
 
   purchaseMultiplier() {
